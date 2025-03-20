@@ -74,7 +74,7 @@
                     <el-table :data="medialist" empty-text="No data">
                         <!-- <el-table-column prop="vhost" label="Host"> </el-table-column> -->
                         <el-table-column sortable prop="app" label="AppName"> </el-table-column>
-                        <el-table-column prop="stream" label="Id"> </el-table-column>
+                        <el-table-column prop="stream" label="StreamID"> </el-table-column>
                         <el-table-column sortable prop="schema" label="Protocol" :filters="schemaFilters" :filter-method="filterSchema"> </el-table-column>
                         <el-table-column prop="createStamp" label="CreateAt">
                             <template #default="scope">
@@ -320,7 +320,7 @@
                             <el-form-item label="AppName" label-width="180px">
                                 <el-input v-model="addStreamProxy_params.app"></el-input>
                             </el-form-item>
-                            <el-form-item label="Id" label-width="180px">
+                            <el-form-item label="StreamID" label-width="180px">
                                 <el-input v-model="addStreamProxy_params.stream"></el-input>
                             </el-form-item>
                             <el-form-item label="Pull source" label-width="180px">
@@ -475,7 +475,7 @@
                         <el-form-item label="AppName" label-width="180px">
                             <el-input v-model="addStreamPusherProxy_params.app"></el-input>
                         </el-form-item>
-                        <el-form-item label="Id" label-width="180px">
+                        <el-form-item label="StreamID" label-width="180px">
                             <el-input v-model="addStreamPusherProxy_params.stream"></el-input>
                         </el-form-item>
                         <el-form-item label="Retweet address" label-width="180px">
@@ -562,7 +562,7 @@
                         <el-form-item label="AppName" label-width="180px">
                             <el-input v-model="addRtpServer_param.app"></el-input>
                         </el-form-item>
-                        <el-form-item label="Id" label-width="180px">
+                        <el-form-item label="StreamID" label-width="180px">
                             <el-input v-model="addRtpServer_param.stream_id"></el-input>
                         </el-form-item>
                         <el-form-item label="TCP mode" label-width="180px">
@@ -596,7 +596,7 @@
                     <el-table :data="rtpserverlist" empty-text="No data">
                         <el-table-column sortable prop="vhost" label="vhost"> </el-table-column>
                         <el-table-column sortable prop="app" label="app"> </el-table-column>
-                        <el-table-column sortable prop="stream_id" label="stream"> </el-table-column>
+                        <el-table-column sortable prop="stream_id" label="streamId"> </el-table-column>
                         <el-table-column sortable prop="port" label="port"></el-table-column>
                         <el-table-column sortable prop="tcp_mode" label="TCP mode">
                             <template slot-scope="scope">
