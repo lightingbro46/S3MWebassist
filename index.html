@@ -2411,7 +2411,7 @@
                 });
 
                 this.webrtc_player.on(ZLMRTCClient.Events.WEBRTC_ON_DATA_CHANNEL_MSG, (event) => {
-                    console.log('rtc datachannel information :', event.data)
+                    console.log('rtc datachannel message :', event.data)
                     this.webrtc.msgrecv = event.data
                 });
                 this.webrtc_player.on(ZLMRTCClient.Events.WEBRTC_ON_DATA_CHANNEL_ERR, (event) => {
